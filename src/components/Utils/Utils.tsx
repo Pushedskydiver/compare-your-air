@@ -1,9 +1,3 @@
-import { createBrowserHistory } from 'history';
-import throttle from 'lodash.throttle';
-
-const isClient = typeof document !== 'undefined';
-const history: any = isClient ? createBrowserHistory() : {};
-
 export const fetchData = async (api: string) => {
   const response = await fetch(api);
   const body = await response.json();
@@ -14,10 +8,6 @@ export const fetchData = async (api: string) => {
 
   return body;
 };
-
-export const updatePath = throttle((city: string) => {
-  history.push(`/${city}`);
-}, 250);
 
 export const calcLastUpdated = (today: Date, previous: Date) => {
   const todaysDate = today.getTime();
