@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> should match snapshot 1`] = `
+<div>
+  <li
+    class="sc-AxjAm kvSbNW"
+  >
+    <button
+      aria-label="Remove Manchester Piccadilly from the selected locations list."
+      class="sc-AxirZ kENeqs"
+      data-location="Manchester Piccadilly"
+    >
+      <svg
+        class="sc-AxiKw hblSaH"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"
+        />
+      </svg>
+    </button>
+    <p
+      class="sc-AxmLO cCCjMN"
+    >
+      Updated 
+      one day ago
+    </p>
+    <h2
+      class="sc-AxhUy drsjDy"
+      color="#7430a2"
+    >
+      Manchester Piccadilly
+    </h2>
+    <p
+      class="sc-AxmLO dJSNSA"
+    >
+      In 
+      Manchester
+      , United Kingdom
+    </p>
+    <p
+      class="sc-AxmLO gROrfw"
+    >
+      <strong>
+        Values: 
+        no2: 27
+      </strong>
+    </p>
+  </li>
+</div>
+`;
