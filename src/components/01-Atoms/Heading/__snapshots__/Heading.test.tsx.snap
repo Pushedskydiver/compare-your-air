@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HeadingStyles /> should match snapshot 1`] = `
+exports[`<Headings /> should match snapshot 1`] = `
 <div>
   <h1
     class="sc-AxjAm cJVohz"
