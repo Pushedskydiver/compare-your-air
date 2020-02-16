@@ -1,18 +1,31 @@
 {
-  "name": "uk-air-quality-app",
+  "name": "compare-your-air-app",
   "version": "0.1.0",
-  "private": true,
+  "description": "Compare the air quality between cities in the UK.",
+  "license": "ISC",
+  "main": "index.js",
+  "author": {
+    "name": "Alex Clapperton",
+    "email": "hi@alexclapperton.co.uk",
+    "url": "https://alexclapperton.co.uk"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
+    "@types/lodash.throttle": "^4.1.6",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/styled-components": "^4.4.3",
+    "lodash.throttle": "^4.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
+    "styled-components": "^5.0.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
