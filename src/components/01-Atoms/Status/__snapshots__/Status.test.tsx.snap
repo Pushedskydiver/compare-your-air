@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Status /> should match snapshot 1`] = `
+<div>
+  <p
+    aria-live="polite"
+    class="sc-AxjAm fjFtQe"
+    role="status"
+  >
+    0
+     results available.
+  </p>
+</div>
+`;
