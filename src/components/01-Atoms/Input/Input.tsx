@@ -72,6 +72,7 @@ const Input = () => {
 
   return (
     <InputStyles
+      data-testid="location-input"
       type="text"
       id="city"
       ref={inputRef}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should match snapshot 1`] = `
+<div>
+  <input
+    aria-autocomplete="list"
+    aria-owns="results"
+    autocomplete="off"
+    class="sc-AxjAm honbvB"
+    data-testid="location-input"
+    id="city"
+    role="combobox"
+    type="text"
+    value="Enter city name…"
+  />
+</div>
+`;
