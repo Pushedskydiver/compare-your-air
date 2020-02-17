@@ -5,7 +5,8 @@ exports[`<List /> should match snapshot 1`] = `
   <ul
     aria-activedescendant="-0"
     aria-hidden="true"
-    class="sc-AxjAm fDiLxa"
+    class="sc-AxirZ dJyZRp"
+    data-testid="location-results"
     id="results"
     role="listbox"
     tabindex="-1"

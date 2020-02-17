@@ -106,6 +106,7 @@ const List = () => {
 
   return (
     <ListStyles
+      data-testid="location-results"
       id="results"
       role="listbox"
       tabIndex={!showResults ? -1 : 0}
