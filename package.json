@@ -9,6 +9,10 @@
     "email": "hi@alexclapperton.co.uk",
     "url": "https://alexclapperton.co.uk"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pushedskydiver/compare-your-air"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
