@@ -4,6 +4,7 @@ exports[`<Input /> should match snapshot 1`] = `
 <div>
   <input
     aria-autocomplete="list"
+    aria-expanded="false"
     aria-owns="results"
     autocomplete="off"
     class="sc-AxjAm honbvB"
