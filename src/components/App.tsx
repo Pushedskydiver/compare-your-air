@@ -1,6 +1,7 @@
 import React from 'react';
 import GlobalStyles from '../styles/global.styles';
 import { Container } from '../styles/generic.container.styles';
+import SkipLink from '../components/01-Atoms/SkipLink/SkipLink.styles';
 import { Heading1 } from '../components/01-Atoms/Heading/Heading.styles';
 import { Search } from '../components/01-Atoms/Icon/Icon';
 import Paragraph from '../components/01-Atoms/Paragraph/Paragraph.styles';
@@ -15,6 +16,8 @@ import { ContextProvider } from './Context';
 const App = () => (
   <ContextProvider>
     <GlobalStyles />
+
+    <SkipLink href="#city">Skip to location search input</SkipLink>
 
     <Container>
       <Heading1 align="center" big>Compare your air</Heading1>
@@ -33,7 +36,6 @@ const App = () => (
 
       <CardsList />
     </Container>
-
   </ContextProvider>
 )
 
