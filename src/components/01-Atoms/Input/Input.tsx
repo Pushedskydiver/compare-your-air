@@ -85,6 +85,7 @@ const Input = () => {
       onKeyUp={handleKeyUpEvent}
       onKeyDown={handleKeyDownEvent}
       aria-autocomplete="list"
+      aria-expanded={showResults}
       aria-owns="results"
       autoComplete="off"
     />
