@@ -54,8 +54,9 @@ const Card = (props: PropsForCard) => {
   }
   
   return (
-    <CardStyles>
+    <CardStyles data-testid="location-card">
       <Button
+        data-testid="location-remove"
         aria-label={`Remove ${location} from the selected locations list.`}
         data-location={location}
         onClick={handleCardRemoval}

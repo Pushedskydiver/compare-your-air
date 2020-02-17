@@ -3,15 +3,17 @@
 exports[`<Card /> should match snapshot 1`] = `
 <div>
   <li
-    class="sc-AxjAm kvSbNW"
+    class="sc-AxhCb gBdabp"
+    data-testid="location-card"
   >
     <button
       aria-label="Remove Manchester Piccadilly from the selected locations list."
-      class="sc-AxirZ kENeqs"
+      class="sc-AxhUy vrqkV"
       data-location="Manchester Piccadilly"
+      data-testid="location-remove"
     >
       <svg
-        class="sc-AxiKw hblSaH"
+        class="sc-AxgMl ddozpw"
         height="24"
         viewBox="0 0 24 24"
         width="24"
@@ -23,26 +25,26 @@ exports[`<Card /> should match snapshot 1`] = `
       </svg>
     </button>
     <p
-      class="sc-AxmLO cCCjMN"
+      class="sc-fzpans iqBrKi"
     >
       Updated 
       one day ago
     </p>
     <h2
-      class="sc-AxhUy drsjDy"
+      class="sc-Axmtr bZYwdh"
       color="#7430a2"
     >
       Manchester Piccadilly
     </h2>
     <p
-      class="sc-AxmLO dJSNSA"
+      class="sc-fzpans jgOCBH"
     >
       In 
       Manchester
       , United Kingdom
     </p>
     <p
-      class="sc-AxmLO gROrfw"
+      class="sc-fzpans hZXKAf"
     >
       <strong>
         Values: 

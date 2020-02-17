@@ -109,7 +109,7 @@ export function ContextProvider(props: ProviderProps) {
     const locationsData = localStorage.getItem('locations');
 
     function setLocations(locations: LocationsArray) {
-      const searchResults = locations.results;
+      const searchResults = locations.results;      
 
       localStorage.setItem('locations', JSON.stringify(searchResults));
       setSearchState({ ...searchSate, searchResults });
