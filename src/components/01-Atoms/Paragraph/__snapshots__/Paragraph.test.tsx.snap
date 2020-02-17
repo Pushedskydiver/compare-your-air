@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> should match default paragraph snapshot 1`] = `
+<div>
+  <p
+    class="sc-AxjAm suCXS"
+  >
+    This is a p tag
+  </p>
+</div>
+`;
+
+exports[`<Paragraph /> should match snapshot of paragraph with no margin 1`] = `
+<div>
+  <p
+    class="sc-AxjAm lelnYw"
+  >
+    This is a p tag
+  </p>
+</div>
+`;
