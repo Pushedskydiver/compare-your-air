@@ -31,7 +31,7 @@ const CardsList = () => {
   }
 
   return (
-    <CardsListStyles>
+    <CardsListStyles data-testid="locations-list">
       {selectedLocations.map(renderLocation)}
     </CardsListStyles>
   );

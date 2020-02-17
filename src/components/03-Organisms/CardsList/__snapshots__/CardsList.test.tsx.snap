@@ -3,7 +3,8 @@
 exports[`<CardsList /> should match snapshot 1`] = `
 <div>
   <ul
-    class="sc-AxjAm bRdXZA"
+    class="sc-AxiKw fteBzX"
+    data-testid="locations-list"
   />
 </div>
 `;
