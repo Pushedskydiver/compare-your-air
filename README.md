@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fad4b427-b555-4a1c-aaa1-1701edd8a895/deploy-status)](https://app.netlify.com/sites/compare-your-air-uk/deploys)
+
 # Comapre Your Air App
 
 ## CLI Commands
