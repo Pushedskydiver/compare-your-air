@@ -3,14 +3,10 @@
 exports[`<Input /> should match snapshot 1`] = `
 <div>
   <input
-    aria-autocomplete="list"
-    aria-expanded="false"
-    aria-owns="results"
-    autocomplete="off"
     class="sc-AxjAm honbvB"
     data-testid="location-input"
     id="city"
-    role="combobox"
+    list="results"
     type="text"
     value="Enter city name…"
   />

@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Headings /> should match snapshot 1`] = `
+exports[`<Headings /> should render a h1 tag 1`] = `
 <div>
   <h1
     class="sc-AxjAm cJVohz"
   >
     This is a h1 tag
   </h1>
+</div>
+`;
+
+exports[`<Headings /> should render a h2 tag 1`] = `
+<div>
+  <h2
+    class="sc-AxirZ hKYpGY"
+  >
+    This is a h2 tag
+  </h2>
 </div>
 `;

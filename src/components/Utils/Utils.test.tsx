@@ -34,7 +34,6 @@ describe('Format date of last updated data', () => {
 
     const result = 'Updated 11 months ago';
 
-
     expect(`Updated ${filteredDate[0]}`).toEqual(result);
   });
 })

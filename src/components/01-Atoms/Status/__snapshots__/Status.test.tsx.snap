@@ -8,7 +8,7 @@ exports[`<Status /> should match snapshot 1`] = `
     role="status"
   >
     0
-     results available.
+     locations available.
   </p>
 </div>
 `;

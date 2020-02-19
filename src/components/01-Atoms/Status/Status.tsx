@@ -3,11 +3,11 @@ import StatusStyles from './Status.styles';
 import Context from '../../Context';
 
 const Status = () => {
-  const { searchResults } = useContext(Context);
-  const resultsLength = searchResults.length;
+  const { selectedLocations } = useContext(Context);
+  const locationsLength = selectedLocations.length;
 
   return (
-    <StatusStyles aria-live="polite" role="status">{resultsLength} results available.</StatusStyles>
+    <StatusStyles aria-live="polite" role="status">{locationsLength} locations available.</StatusStyles>
   )
 }
 

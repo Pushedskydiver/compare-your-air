@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Compare the air quality between cities in the UK.",
   "license": "ISC",
-  "main": "index.js",
+  "main": "index.tsx",
   "author": {
     "name": "Alex Clapperton",
     "email": "hi@alexclapperton.co.uk",

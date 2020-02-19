@@ -40,9 +40,7 @@ afterEach(() => {
 
 describe('<CardsList />', () => {
   it('should match snapshot', () => {
-    const { container } = render(
-      <CardsList />
-    );
+    const { container } = render(<CardsList />);
     expect(container).toMatchSnapshot();
   });
 

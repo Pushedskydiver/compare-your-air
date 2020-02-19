@@ -3,7 +3,7 @@ import { colors } from '../../../styles/colors.styles';
 import { typography } from '../../../styles/typography.styles';
 import spacing from '../../../styles/spacing.styles';
 
-const ListStyles = styled.ul`
+const ListStyles = styled.datalist`
   position: absolute;
   top: calc(100% - ${spacing.core}px);
   left: 0;

@@ -2,14 +2,20 @@
 
 exports[`<List /> should match snapshot 1`] = `
 <div>
-  <ul
-    aria-activedescendant="-0"
-    aria-hidden="true"
-    class="sc-AxirZ dJyZRp"
+  <datalist
+    class="sc-AxjAm fDiLxa"
     data-testid="location-results"
     id="results"
-    role="listbox"
-    tabindex="-1"
-  />
+  >
+    <option
+      value="Aberdeen"
+    />
+    <option
+      value="Armagh"
+    />
+    <option
+      value="Aston Hill"
+    />
+  </datalist>
 </div>
 `;

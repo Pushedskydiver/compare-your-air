@@ -1,93 +1,46 @@
-import React, { memo, useEffect, useContext, useRef, useState } from 'react';
+import React, { memo, useContext, useState } from 'react';
 import InputStyles from './Input.styles';
 import Context from '../../Context';
 
 const Input = () => {
-  const { handleSearchTerm, handleShowResults, focusToInput, setInputFocus, showResults } = useContext(Context);
+  const { selectLocation, searchResults } = useContext(Context);
   const [value, setValue] = useState('Enter city name…');
-  const inputRef = useRef<HTMLInputElement>(null);
 
-  function handleChange(event: any) {
-    const value: string = event.target.value;    
+  function handleChangeEvent(event: any) {
+    const value: string = event.target.value;
+    const result: any = searchResults.find((item: any) => item.name === value);
+    const isMatch = result ? result.name.toLowerCase() : null;
 
-    if (!showResults) {
-      handleShowResults(true);
+    if (isMatch && isMatch === value.toLowerCase()) {
+      selectLocation(value);
     }
 
     setValue(value);
-    handleSearchTerm(value);
   }
 
-  function handleBlur() {
+  function handleBlurEvent() {
     if (value === '') {
       setValue('Enter city name…');
     }
   }
 
-  function handleFocus() {
+  function handleFocusEvent() {
     if (value === 'Enter city name…') {
       setValue('');
       return;
     }
-
-    if (value.length > 0) {
-      handleSearchTerm(value);
-    }
   }
-
-  function handleClick() {
-    if (!focusToInput) {
-      setInputFocus(true);
-    }
-
-    handleShowResults(true);
-  }
-
-  function handleArrowDown(target: any) {
-    if (!showResults) {
-      handleShowResults(true);
-    }
-
-    setInputFocus(false);
-    target.nextElementSibling.focus();
-  }
-
-  function handleKeyUpEvent(event: any) {
-    if (event.key === 'ArrowDown') {
-      handleArrowDown(event.target);
-    }
-  }
-
-  function handleKeyDownEvent(event: any) {
-    if (event.key === 'Tab') {
-      setInputFocus(false);
-    }
-  }
-
-  useEffect(() => {
-    if (focusToInput && inputRef.current !== null) {
-      inputRef.current.focus();
-    }
-  }, [focusToInput, inputRef]);
 
   return (
     <InputStyles
       data-testid="location-input"
       type="text"
       id="city"
-      ref={inputRef}
-      role="combobox"
+      list="results"
       value={value}
-      onChange={handleChange}
-      onBlur={handleBlur}
-      onFocus={handleFocus}
-      onClick={handleClick}
-      onKeyUp={handleKeyUpEvent}
-      onKeyDown={handleKeyDownEvent}
-      aria-autocomplete="list"
-      aria-expanded={showResults}
-      aria-owns="results"
-      autoComplete="off"
+      onChange={handleChangeEvent}
+      onBlur={handleBlurEvent}
+      onFocus={handleFocusEvent}
     />
   );
 }

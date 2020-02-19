@@ -18,34 +18,23 @@ type LocationsArray = {
 }
 
 export const Context = createContext({
-  setInputFocus: (focus: boolean) => focus,
-  focusToInput: false,
-  focusToResult: false,
   removeSelectedLocation: (location: string) => location,
   searchResults: [],
   searchTerm: '',
   selectLocation: (location: string) => location,
   selectedLocations: [],
-  showResults: false,
-  handleSearchTerm: (searchTerm: string) => searchTerm,
-  handleShowResults: (showResults: boolean) => showResults
+  handleSearchTerm: (searchTerm: string) => searchTerm
 });
 
 export function ContextProvider(props: ProviderProps) {
   const locations = JSON.parse(localStorage.getItem('locations') || '[]');
-  const [state, setState] = useState({
-    focusToInput: false,
-    focusToResult: false
-  });
-
   const [searchSate, setSearchState] = useState({
     searchTerm: '',
     searchResults: locations
   });
 
   const [resultsState, setResultsState] = useState({
-    selectedLocations: [],
-    showResults: false,
+    selectedLocations: []
   });
 
   function filterLocations(location: LocationObject, searchTerm: string) {
@@ -58,12 +47,6 @@ export function ContextProvider(props: ProviderProps) {
     setSearchState({ ...searchSate, searchResults });
 
     return searchTerm;
-  }
-
-  function handleShowResults(showResults: boolean) {
-    setResultsState({ ...resultsState, showResults });
-
-    return showResults;
   }
 
   function removeSelectedLocation(location: string) {
@@ -90,19 +73,13 @@ export function ContextProvider(props: ProviderProps) {
   }
 
   function selectLocation(location: string) {
-    const api = `https://api.openaq.org/v1/latest?city=${location}`;
+    const api = `https://api.openaq.org/v1/latest?city=${location}`;    
     
     fetchData(api)
       .then(handleSelectedLocation)
       .catch(error => console.error(error));
 
     return location;
-  }
-
-  function setInputFocus(focus: boolean) {    
-    setState({ ...state, focusToInput: focus });
-
-    return focus;
   }
 
   useEffect(() => {
@@ -126,17 +103,14 @@ export function ContextProvider(props: ProviderProps) {
     if (locationsData === null) {
       fetchCitiesData();
     }
-  }, [state, searchSate]);
+  }, [searchSate]);
 
   const data = {
-    ...state,
     ...searchSate,
     ...resultsState,
     handleSearchTerm,
-    handleShowResults,
     removeSelectedLocation,
     selectLocation,
-    setInputFocus
   };
 
   return (
